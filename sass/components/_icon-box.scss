@@ -1,0 +1,19 @@
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  min-width: 44px;
+  min-height: 44px;
+  color: var(--icons-first-color);
+  transition: color var(--transition-timing) var(--cubic-bezier-first),
+    background-color var(--transition-timing) var(--cubic-bezier-first);
+  &__icon {
+    fill: currentColor;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--brand-primary-color);
+    color: var(--white-color);
+  }
+}

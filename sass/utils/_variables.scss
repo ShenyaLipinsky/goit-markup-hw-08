@@ -1,0 +1,37 @@
+:root {
+  --brand-primary-color: #2196f3;
+  --brand-secondary-color: #000000;
+  --body-color: #757575;
+  --background-color: #2f303a;
+  --title-color: #212121;
+  --white-color: #ffffff;
+  --our-team-color: #f5f4fa;
+  --second-button-color: #188ce8;
+  --border-cards-color: #eeeeee;
+  --border-header-color: #ececec;
+  --icons-first-color: #afb1b8;
+  --cubic-bezier-first: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-timing: 250ms;
+}
+
+body {
+  color: var(--body-color);
+  font-family: "Roboto", "sans-serif";
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.title,
+.name,
+.name-of-position {
+  color: var(--title-color);
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  color: var(--white-color);
+  background-color: var(--brand-primary-color);
+  border: transparent;
+  border-radius: 4px;
+}

@@ -1,0 +1,37 @@
+.benefits {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    max-width: 270px;
+    margin-left: 30px;
+    line-height: 1.71;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__icon {
+    content: "";
+    &-box {
+      display: flex;
+      width: 270px;
+      height: 120px;
+      justify-content: center;
+      align-items: center;
+      background: var(--our-team-color);
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+  list-style: none;
+  &__item {
+    margin-right: 8px;
+    &__button {
+      border: hidden;
+      border-radius: 4px;
+      padding: 6px 22px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.62;
+      font-family: "Roboto", "sans-serif";
+      transition: color var(--transition-timing) var(--cubic-bezier-first),
+        background-color var(--transition-timing) var(--cubic-bezier-first),
+        box-shadow var(--transition-timing) var(--cubic-bezier-first);
+    }
+  }
+}
+
+.filter__item__button:hover,
+.filter__item__button:focus,
+.filter__item__button--active {
+  color: var(--white-color);
+  background-color: var(--brand-primary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
