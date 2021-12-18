@@ -14,10 +14,12 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  /* border: 2px dashed tomato; */
+  @media screen and (min-width: 1600px) {
+    width: 1200px;
+  }
 }
 .visually-hidden {
   position: absolute;
