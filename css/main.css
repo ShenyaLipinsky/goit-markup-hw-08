@@ -990,6 +990,12 @@ address {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 1600px) {
+  .clients {
+    padding: 94px 0;
+  }
+}
+
 .clients__title {
   margin-bottom: 30px;
   letter-spacing: 0.03em;
@@ -1123,6 +1129,12 @@ address {
 .footer__contacts {
   text-align: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+  .footer__contacts {
+    margin-bottom: 0;
+  }
 }
 
 .footer__container__address__links {
@@ -1681,4 +1693,200 @@ address {
 .modal__callback__license__label__checkbox:checked + .modal__callback__license__label__checkbox__icon {
   background-color: var(--brand-primary-color);
   border-color: transparent;
+}
+
+.filter {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
+
+.filter__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.filter__item:last-child {
+  margin-right: 0;
+}
+
+.filter__item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item {
+    margin-bottom: 0;
+  }
+  .filter__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.filter__item__button {
+  border: hidden;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  font-family: "Roboto", "sans-serif";
+  -webkit-transition: color var(--transition-timing) var(--cubic-bezier-first), background-color var(--transition-timing) var(--cubic-bezier-first), -webkit-box-shadow var(--transition-timing) var(--cubic-bezier-first);
+  transition: color var(--transition-timing) var(--cubic-bezier-first), background-color var(--transition-timing) var(--cubic-bezier-first), -webkit-box-shadow var(--transition-timing) var(--cubic-bezier-first);
+  transition: color var(--transition-timing) var(--cubic-bezier-first), background-color var(--transition-timing) var(--cubic-bezier-first), box-shadow var(--transition-timing) var(--cubic-bezier-first);
+  transition: color var(--transition-timing) var(--cubic-bezier-first), background-color var(--transition-timing) var(--cubic-bezier-first), box-shadow var(--transition-timing) var(--cubic-bezier-first), -webkit-box-shadow var(--transition-timing) var(--cubic-bezier-first);
+}
+
+.filter__item__button:hover,
+.filter__item__button:focus,
+.filter__item__button--active {
+  color: var(--white-color);
+  background-color: var(--brand-primary-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 1600px) {
+  .portfolio {
+    padding: 94px 0;
+  }
+}
+
+.portfolio__positions {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.portfolio__positions__item {
+  border: 1px solid var(--border-cards-color);
+  margin: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__positions__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__positions__item {
+    width: 354px;
+    height: 100%;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .portfolio__positions__item {
+    width: 370px;
+  }
+}
+
+.portfolio__positions__item__link {
+  text-decoration: none;
+  display: block;
+  -webkit-transition: -webkit-box-shadow var(--transition-timing) var(--cubic-bezier-first);
+  transition: -webkit-box-shadow var(--transition-timing) var(--cubic-bezier-first);
+  transition: box-shadow var(--transition-timing) var(--cubic-bezier-first);
+  transition: box-shadow var(--transition-timing) var(--cubic-bezier-first), -webkit-box-shadow var(--transition-timing) var(--cubic-bezier-first);
+}
+
+.portfolio__positions__item__link:hover, .portfolio__positions__item__link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__positions__item__link:hover .portfolio__positions__item__link__card-slider__text,
+.portfolio__positions__item__link:focus .portfolio__positions__item__link__card-slider__text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform var(--transition-timing) var(--cubic-bezier-first);
+  transition: -webkit-transform var(--transition-timing) var(--cubic-bezier-first);
+  transition: transform var(--transition-timing) var(--cubic-bezier-first);
+  transition: transform var(--transition-timing) var(--cubic-bezier-first), -webkit-transform var(--transition-timing) var(--cubic-bezier-first);
+}
+
+.portfolio__positions__item__link__descriptions {
+  padding: 20px 24px;
+  color: var(--body-color);
+}
+
+.portfolio__positions__item__link__descriptions__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.portfolio__positions__item__link__descriptions__type {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.portfolio__positions__item__link__card-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__positions__item__link__card-slider__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  pointer-events: none;
+  -webkit-transition: -webkit-transform var(--transition-timing) var(--cubic-bezier-first);
+  transition: -webkit-transform var(--transition-timing) var(--cubic-bezier-first);
+  transition: transform var(--transition-timing) var(--cubic-bezier-first);
+  transition: transform var(--transition-timing) var(--cubic-bezier-first), -webkit-transform var(--transition-timing) var(--cubic-bezier-first);
+}
+
+@media screen and (min-width: 768px) {
+  .set-of-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+  }
 }

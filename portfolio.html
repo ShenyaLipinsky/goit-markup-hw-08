@@ -120,7 +120,7 @@
     <!-- Портфолио -->
     <main>
       <!-- Радио кнопки -->
-      <section class="section">
+      <section class="section portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter">
@@ -152,16 +152,44 @@
             </li>
           </ul>
           <!-- Ассортимент -->
-          <ul class="positions set-of-cards">
-            <li class="positions__item">
-              <a href="" class="positions__item__link">
-                <div class="positions__item__link__card-slider">
-                  <img
-                    src="./images/technohryak.jpg"
-                    alt="Изображение сайта на ноутбуке"
-                    width="370"
-                  />
-                  <div class="positions__item__link__card-slider__text">
+          <ul class="portfolio__positions set-of-cards">
+            <li class="portfolio__positions__item">
+              <a href="" class="portfolio__positions__item__link">
+                <div class="portfolio__positions__item__link__card-slider">
+                  <picture class="portfolio__position__item__img">
+                    <source
+                      srcset="
+                        ./images/mobile/notebook_mob_x1.jpg 450w,
+                        ./images/mobile/notebook_mob_x2.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 450px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/notebook_tab_x1.jpg 354w,
+                        ./images/tablet/notebook_tab_x2.jpg 708w
+                      "
+                      media="(max-width: 1599px)"
+                      sizes="(min-width: 354px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk/notebook_desk_x1.jpg 370w,
+                        ./images/desk/notebook_desk_x2.jpg 740w
+                      "
+                      media="(min-width: 1600px)"
+                      sizes="(min-width: 370px) 370px, 100vw"
+                    />
+                    <img
+                      src="./images/technohryak.jpg"
+                      alt="Изображение сайта на ноутбуке"
+                    />
+                  </picture>
+
+                  <div
+                    class="portfolio__positions__item__link__card-slider__text"
+                  >
                     <p>
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -170,25 +198,59 @@
                     </p>
                   </div>
                 </div>
-                <div class="positions__item__link__descriptions">
-                  <h2 class="positions__item__link__descriptions__name name">
+                <div class="portfolio__positions__item__link__descriptions">
+                  <h2
+                    class="
+                      portfolio__positions__item__link__descriptions__name
+                      name
+                    "
+                  >
                     Технокряк
                   </h2>
-                  <p class="positions__item__link__descriptions__type">
+                  <p
+                    class="portfolio__positions__item__link__descriptions__type"
+                  >
                     Веб-сайт
                   </p>
                 </div></a
               >
             </li>
-            <li class="positions__item">
-              <a href="" class="positions__item__link">
-                <div class="positions__item__link__card-slider">
-                  <img
-                    src="./images/poster.jpg"
-                    alt="Постер команд нового орлеана и голден старс"
-                    width="370"
-                  />
-                  <div class="positions__item__link__card-slider__text">
+            <li class="portfolio__positions__item">
+              <a href="" class="portfolio__positions__item__link">
+                <div class="portfolio__positions__item__link__card-slider">
+                  <picture class="portfolio__position__item__img">
+                    <source
+                      srcset="
+                        ./images/mobile/poster_mob_x1.jpg 450w,
+                        ./images/mobile/poster_mob_x2.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 450px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/poster_tab_x1.jpg 354w,
+                        ./images/tablet/poster_tab_x2.jpg 708w
+                      "
+                      media="(max-width: 1599px)"
+                      sizes="(min-width: 354px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk/poster_desk_x1.jpg 370w,
+                        ./images/desk/poster_desk_x2.jpg 740w
+                      "
+                      media="(min-width: 1600px)"
+                      sizes="(min-width: 370px) 370px, 100vw"
+                    />
+                    <img
+                      src="./images/poster.jpg"
+                      alt="Постер команд нового орлеана и голден старс"
+                    />
+                  </picture>
+                  <div
+                    class="portfolio__positions__item__link__card-slider__text"
+                  >
                     <p>
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -197,26 +259,61 @@
                     </p>
                   </div>
                 </div>
-                <div class="positions__item__link__descriptions">
-                  <h2 class="positions__item__link__descriptions__name name">
+                <div class="portfolio__positions__item__link__descriptions">
+                  <h2
+                    class="
+                      portfolio__positions__item__link__descriptions__name
+                      name
+                    "
+                  >
                     Постер
                     <span lang="en">Orlean vs Golden Star</span>
                   </h2>
-                  <p class="positions__item__link__descriptions__type">
+                  <p
+                    class="portfolio__positions__item__link__descriptions__type"
+                  >
                     Дизайн
                   </p>
                 </div>
               </a>
             </li>
-            <li class="positions__item">
-              <a href="" class="positions__item__link">
-                <div class="positions__item__link__card-slider">
-                  <img
-                    src="./images/seafood.jpg"
-                    alt="Изображение логотипа ресторана Seafood"
-                    width="370"
-                  />
-                  <div class="positions__item__link__card-slider__text">
+            <li class="portfolio__positions__item">
+              <a href="" class="portfolio__positions__item__link">
+                <div class="portfolio__positions__item__link__card-slider">
+                  <picture class="portfolio__position__item__img">
+                    <source
+                      srcset="
+                        ./images/mobile/seafood_mob_x1.jpg 450w,
+                        ./images/mobile/seafood_mob_x2.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 450px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/seafood_tab_x1.jpg 354w,
+                        ./images/tablet/seafood_tab_x2.jpg 708w
+                      "
+                      media="(max-width: 1599px)"
+                      sizes="(min-width: 354px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk/seafood_desk_x1.jpg 370w,
+                        ./images/desk/seafood_desk_x2.jpg 740w
+                      "
+                      media="(min-width: 1600px)"
+                      sizes="(min-width: 370px) 370px, 100vw"
+                    />
+                    <img
+                      src="./images/seafood.jpg"
+                      alt="Изображение логотипа ресторана Seafood"
+                    />
+                  </picture>
+
+                  <div
+                    class="portfolio__positions__item__link__card-slider__text"
+                  >
                     <p>
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -225,26 +322,61 @@
                     </p>
                   </div>
                 </div>
-                <div class="positions__item__link__descriptions">
-                  <h2 class="positions__item__link__descriptions__name name">
+                <div class="portfolio__positions__item__link__descriptions">
+                  <h2
+                    class="
+                      portfolio__positions__item__link__descriptions__name
+                      name
+                    "
+                  >
                     Ресторан
                     <span lang="en">Seafood</span>
                   </h2>
-                  <p class="positions__item__link__descriptions__type">
+                  <p
+                    class="portfolio__positions__item__link__descriptions__type"
+                  >
                     Приложение
                   </p>
                 </div>
               </a>
             </li>
-            <li class="positions__item">
-              <a href="" class="positions__item__link">
-                <div class="positions__item__link__card-slider">
-                  <img
-                    src="./images/headphones.jpg"
-                    alt="Изображение Наушников"
-                    width="370"
-                  />
-                  <div class="positions__item__link__card-slider__text">
+            <li class="portfolio__positions__item">
+              <a href="" class="portfolio__positions__item__link">
+                <div class="portfolio__positions__item__link__card-slider">
+                  <picture class="portfolio__position__item__img">
+                    <source
+                      srcset="
+                        ./images/mobile/headphones_mob_x1.jpg 450w,
+                        ./images/mobile/headphones_mob_x2.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 450px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/headphones_tab_x1.jpg 354w,
+                        ./images/tablet/headphones_tab_x2.jpg 708w
+                      "
+                      media="(max-width: 1599px)"
+                      sizes="(min-width: 354px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk/headphones_desk_x1.jpg 370w,
+                        ./images/desk/headphones_desk_x2.jpg 740w
+                      "
+                      media="(min-width: 1600px)"
+                      sizes="(min-width: 370px) 370px, 100vw"
+                    />
+                    <img
+                      src="./images/headphones.jpg"
+                      alt="Изображение Наушников"
+                    />
+                  </picture>
+
+                  <div
+                    class="portfolio__positions__item__link__card-slider__text"
+                  >
                     <p>
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -253,26 +385,58 @@
                     </p>
                   </div>
                 </div>
-                <div class="positions__item__link__descriptions">
-                  <h2 class="positions__item__link__descriptions__name name">
+                <div class="portfolio__positions__item__link__descriptions">
+                  <h2
+                    class="
+                      portfolio__positions__item__link__descriptions__name
+                      name
+                    "
+                  >
                     Проект
                     <span lang="en">Prime</span>
                   </h2>
-                  <p class="positions__item__link__descriptions__type">
+                  <p
+                    class="portfolio__positions__item__link__descriptions__type"
+                  >
                     Маркетинг
                   </p>
                 </div>
               </a>
             </li>
-            <li class="positions__item">
-              <a href="" class="positions__item__link">
-                <div class="positions__item__link__card-slider">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="Изображение коробочек"
-                    width="370"
-                  />
-                  <div class="positions__item__link__card-slider__text">
+            <li class="portfolio__positions__item">
+              <a href="" class="portfolio__positions__item__link">
+                <div class="portfolio__positions__item__link__card-slider">
+                  <picture class="portfolio__position__item__img">
+                    <source
+                      srcset="
+                        ./images/mobile/boxes_mob_x1.jpg 450w,
+                        ./images/mobile/boxes_mob_x2.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 450px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/boxes_tab_x1.jpg 354w,
+                        ./images/tablet/boxes_tab_x2.jpg 708w
+                      "
+                      media="(max-width: 1599px)"
+                      sizes="(min-width: 354px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk/boxes_desk_x1.jpg 370w,
+                        ./images/desk/boxes_desk_x2.jpg 740w
+                      "
+                      media="(min-width: 1600px)"
+                      sizes="(min-width: 370px) 370px, 100vw"
+                    />
+                    <img src="./images/boxes.jpg" alt="Изображение коробочек" />
+                  </picture>
+
+                  <div
+                    class="portfolio__positions__item__link__card-slider__text"
+                  >
                     <p>
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -281,26 +445,61 @@
                     </p>
                   </div>
                 </div>
-                <div class="positions__item__link__descriptions">
-                  <h2 class="positions__item__link__descriptions__name name">
+                <div class="portfolio__positions__item__link__descriptions">
+                  <h2
+                    class="
+                      portfolio__positions__item__link__descriptions__name
+                      name
+                    "
+                  >
                     Проект
                     <span lang="en">Boxes</span>
                   </h2>
-                  <p class="positions__item__link__descriptions__type">
+                  <p
+                    class="portfolio__positions__item__link__descriptions__type"
+                  >
                     Приложение
                   </p>
                 </div>
               </a>
             </li>
-            <li class="positions__item">
-              <a href="" class="positions__item__link">
-                <div class="positions__item__link__card-slider">
-                  <img
-                    src="./images/display.jpg"
-                    alt="Изображение сайта на экране монитора"
-                    width="370"
-                  />
-                  <div class="positions__item__link__card-slider__text">
+            <li class="portfolio__positions__item">
+              <a href="" class="portfolio__positions__item__link">
+                <div class="portfolio__positions__item__link__card-slider">
+                  <picture class="portfolio__position__item__img">
+                    <source
+                      srcset="
+                        ./images/mobile/display_mob_x1.jpg 450w,
+                        ./images/mobile/display_mob_x2.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 450px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/display_tab_x1.jpg 354w,
+                        ./images/tablet/display_tab_x2.jpg 708w
+                      "
+                      media="(max-width: 1599px)"
+                      sizes="(min-width: 354px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk/display_desk_x1.jpg 370w,
+                        ./images/desk/display_desk_x2.jpg 740w
+                      "
+                      media="(min-width: 1600px)"
+                      sizes="(min-width: 370px) 370px, 100vw"
+                    />
+                    <img
+                      src="./images/display.jpg"
+                      alt="Изображение сайта на экране монитора"
+                    />
+                  </picture>
+
+                  <div
+                    class="portfolio__positions__item__link__card-slider__text"
+                  >
                     <p>
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -309,28 +508,61 @@
                     </p>
                   </div>
                 </div>
-                <div class="positions__item__link__descriptions">
+                <div class="portfolio__positions__item__link__descriptions">
                   <h2
-                    class="positions__item__link__descriptions__name name"
+                    class="
+                      portfolio__positions__item__link__descriptions__name
+                      name
+                    "
                     lang="en"
                   >
                     Inspiration has no Borders
                   </h2>
-                  <p class="positions__item__link__descriptions__type">
+                  <p
+                    class="portfolio__positions__item__link__descriptions__type"
+                  >
                     Веб-сайт
                   </p>
                 </div>
               </a>
             </li>
-            <li class="positions__item">
-              <a href="" class="positions__item__link">
-                <div class="positions__item__link__card-slider">
-                  <img
-                    src="./images/book.jpg"
-                    alt="Изображение развернутой книги"
-                    width="370"
-                  />
-                  <div class="positions__item__link__card-slider__text">
+            <li class="portfolio__positions__item">
+              <a href="" class="portfolio__positions__item__link">
+                <div class="portfolio__positions__item__link__card-slider">
+                  <picture class="portfolio__position__item__img">
+                    <source
+                      srcset="
+                        ./images/mobile/book_mob_x1.jpg 450w,
+                        ./images/mobile/book_mob_x2.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 450px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/book_tab_x1.jpg 354w,
+                        ./images/tablet/book_tab_x2.jpg 708w
+                      "
+                      media="(max-width: 1599px)"
+                      sizes="(min-width: 354px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk/book_desk_x1.jpg 370w,
+                        ./images/desk/book_desk_x2.jpg 740w
+                      "
+                      media="(min-width: 1600px)"
+                      sizes="(min-width: 370px) 370px, 100vw"
+                    />
+                    <img
+                      src="./images/book.jpg"
+                      alt="Изображение развернутой книги"
+                    />
+                  </picture>
+
+                  <div
+                    class="portfolio__positions__item__link__card-slider__text"
+                  >
                     <p>
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -339,26 +571,58 @@
                     </p>
                   </div>
                 </div>
-                <div class="positions__item__link__descriptions">
-                  <h2 class="positions__item__link__descriptions__name name">
+                <div class="portfolio__positions__item__link__descriptions">
+                  <h2
+                    class="
+                      portfolio__positions__item__link__descriptions__name
+                      name
+                    "
+                  >
                     Издание
                     <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="positions__item__link__descriptions__type">
+                  <p
+                    class="portfolio__positions__item__link__descriptions__type"
+                  >
                     Дизайн
                   </p>
                 </div>
               </a>
             </li>
-            <li class="positions__item">
-              <a href="" class="positions__item__link">
-                <div class="positions__item__link__card-slider">
-                  <img
-                    src="./images/label.jpg"
-                    alt="Изображение бирки"
-                    width="370"
-                  />
-                  <div class="positions__item__link__card-slider__text">
+            <li class="portfolio__positions__item">
+              <a href="" class="portfolio__positions__item__link">
+                <div class="portfolio__positions__item__link__card-slider">
+                  <picture class="portfolio__position__item__img">
+                    <source
+                      srcset="
+                        ./images/mobile/label_mob_x1.jpg 450w,
+                        ./images/mobile/label_mob_x2.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 450px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/label_tab_x1.jpg 354w,
+                        ./images/tablet/label_tab_x2.jpg 708w
+                      "
+                      media="(max-width: 1599px)"
+                      sizes="(min-width: 354px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk/label_desk_x1.jpg 370w,
+                        ./images/desk/label_desk_x2.jpg 740w
+                      "
+                      media="(min-width: 1600px)"
+                      sizes="(min-width: 370px) 370px, 100vw"
+                    />
+                    <img src="./images/label.jpg" alt="Изображение бирки" />
+                  </picture>
+
+                  <div
+                    class="portfolio__positions__item__link__card-slider__text"
+                  >
                     <p>
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -367,26 +631,61 @@
                     </p>
                   </div>
                 </div>
-                <div class="positions__item__link__descriptions">
-                  <h2 class="positions__item__link__descriptions__name name">
+                <div class="portfolio__positions__item__link__descriptions">
+                  <h2
+                    class="
+                      portfolio__positions__item__link__descriptions__name
+                      name
+                    "
+                  >
                     Проект
                     <span lang="en">LAB</span>
                   </h2>
-                  <p class="positions__item__link__descriptions__type">
+                  <p
+                    class="portfolio__positions__item__link__descriptions__type"
+                  >
                     Маркетинг
                   </p>
                 </div>
               </a>
             </li>
-            <li class="positions__item">
-              <a href="" class="positions__item__link">
-                <div class="positions__item__link__card-slider">
-                  <img
-                    src="./images/notebook.jpg"
-                    alt="Человек работает за ноутбуком"
-                    width="370"
-                  />
-                  <div class="positions__item__link__card-slider__text">
+            <li class="portfolio__positions__item">
+              <a href="" class="portfolio__positions__item__link">
+                <div class="portfolio__positions__item__link__card-slider">
+                  <picture class="portfolio__position__item__img">
+                    <source
+                      srcset="
+                        ./images/mobile/worknotebook_mob_x1.jpg 450w,
+                        ./images/mobile/worknotebook_mob_x2.jpg 900w
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 450px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/worknotebook_tab_x1.jpg 354w,
+                        ./images/tablet/worknotebook_tab_x2.jpg 708w
+                      "
+                      media="(max-width: 1599px)"
+                      sizes="(min-width: 354px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk/worknotebook_desk_x1.jpg 370w,
+                        ./images/desk/worknotebook_desk_x2.jpg 740w
+                      "
+                      media="(min-width: 1600px)"
+                      sizes="(min-width: 370px) 370px, 100vw"
+                    />
+                    <img
+                      src="./images/notebook.jpg"
+                      alt="Человек работает за ноутбуком"
+                    />
+                  </picture>
+
+                  <div
+                    class="portfolio__positions__item__link__card-slider__text"
+                  >
                     <p>
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -395,14 +694,19 @@
                     </p>
                   </div>
                 </div>
-                <div class="positions__item__link__descriptions">
+                <div class="portfolio__positions__item__link__descriptions">
                   <h2
-                    class="positions__item__link__descriptions__name name"
+                    class="
+                      portfolio__positions__item__link__descriptions__name
+                      name
+                    "
                     lang="en"
                   >
                     Growing Business
                   </h2>
-                  <p class="positions__item__link__descriptions__type">
+                  <p
+                    class="portfolio__positions__item__link__descriptions__type"
+                  >
                     Приложение
                   </p>
                 </div>
@@ -413,9 +717,9 @@
       </section>
     </main>
     <!-- Подвал -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="footer__container container">
-        <div>
+        <div class="footer__contacts">
           <a href="./index.html" class="footer__container__logo logo"
             >Web<span class="footer__container__logo-studio--light"
               >Studio</span

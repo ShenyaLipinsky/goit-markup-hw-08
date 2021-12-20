@@ -1,5 +1,6 @@
 .footer {
   background-color: var(--background-color);
+
   &__container {
     display: flex;
     @media screen and (max-width: 767px) {
@@ -28,6 +29,9 @@
   &__contacts {
     text-align: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 1600px) {
+      margin-bottom: 0;
+    }
   }
 }
 
