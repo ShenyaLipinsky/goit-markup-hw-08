@@ -88,7 +88,11 @@
             type="button"
             class="
               nav__button__mob
-              js-open-button js-close-button js-menu-button js-open-menu js-close-menu
+              js-open-button
+              js-close-button
+              js-menu-button
+              js-open-menu
+              js-close-menu
             "
             aria-label="Кнопка мобильного меню"
             aria-controls="nav__mob"
@@ -122,56 +126,58 @@
         </div>
       </section>
 
-    <!-- Особености -->
-    <!-- <section class="benefits section">
+      <!-- Особености -->
+      <section class="benefits section">
         <h2 class="visually-hidden">особенности нашей работы</h2>
         <div class="container">
           <ul class="benefits__list">
-            <li class="benefits__item benefits__icon">
-              <div class="benefits__icon-box">
+            <li class="benefits__list__item benefits__list__icon">
+              <div class="benefits__list__item__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-satelite-icon"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title title">Внимание к деталям</h3>
+              <h3 class="benefits__list__title title">Внимание к деталям</h3>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </li>
-            <li class="benefits__item benefits__icon">
-              <div class="benefits__icon-box">
+            <li class="benefits__list__item benefits__list__icon">
+              <div class="benefits__list__item__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-icon"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title title">Пунктуальность</h3>
+              <h3 class="benefits__list__title title">Пунктуальность</h3>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </li>
-            <li class="benefits__item benefits__icon">
-              <div class="benefits__icon-box">
+            <li class="benefits__list__item benefits__list__icon">
+              <div class="benefits__list__item__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-graph-icon"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title title">Планирование</h3>
+              <h3 class="benefits__list__title title">Планирование</h3>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </li>
-            <li class="benefits__item benefits__icon">
-              <div class="benefits__icon-box">
+            <li class="benefits__list__item benefits__list__icon">
+              <div class="benefits__list__item__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-icon"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title title">Современные технологии</h3>
+              <h3 class="benefits__list__title title">
+                Современные технологии
+              </h3>
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- Чем мы занимаемся -->
-    <!-- <section class="ours-work section">
+      </section>
+      <!-- Чем мы занимаемся -->
+      <section class="ours-work section">
         <div class="container">
           <h2 class="ours-work__title title">Чем мы занимаемся</h2>
           <ul class="ours-work__list">
@@ -181,6 +187,7 @@
                 width="370"
                 alt="Человек работает за компьютером"
               />
+
               <div class="ours-work__item__bg">
                 <p class="ours-work__item__title">Десктопные приложения</p>
               </div>
@@ -207,18 +214,41 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!--Наша команда-->
-    <!-- <section class="our-team section">
+      </section>
+      <!--Наша команда-->
+      <section class="our-team section">
         <div class="container">
           <h2 class="our-team__title title">Наша команда</h2>
           <ul class="our-team__list">
-            <li class="our-team__item our-team-icon">
-              <img
-                src="./images/ourteam-1.jpg"
-                width="270"
-                alt="Игорь Демьяненко"
-              />
+            <li class="our-team__item card our-team-icon">
+              <picture class="our-team__item__img">
+                <source
+                  srcset="
+                    ./images/mobile/ourteam-1_mob_x1.jpg 450w,
+                    ./images/mobile/ourteam-1_mob_x2.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ourteam-1_tab_x1.jpg 354w,
+                    ./images/tablet/ourteam-1_tab_x2.jpg 708w
+                  "
+                  media="(max-width: 1599px)"
+                  sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desk/ourteam-1_desk_x1.jpg 270w,
+                    ./images/desk/ourteam-1_desk_x2.jpg 540w
+                  "
+                  media="(min-width: 1600px)"
+                  sizes="(min-width: 270px) 270px, 100vw"
+                />
+
+                <img src="./images/ourteam-1.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="our-team__description">
                 <h3 class="our-team__name name">Игорь Демьяненко</h3>
                 <p lang="en" class="our-team__profession">Product Designer</p>
@@ -261,11 +291,33 @@
               </div>
             </li>
             <li class="our-team__item card our-team-icon">
-              <img
-                src="./images/ourteam-2.jpg"
-                width="270"
-                alt="Ольга Репина"
-              />
+              <picture class="our-team__item__img">
+                <source
+                  srcset="
+                    ./images/mobile/ourteam-2_mob_x1.jpg 450w,
+                    ./images/mobile/ourteam-2_mob_x2.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ourteam-2_tab_x1.jpg 354w,
+                    ./images/tablet/ourteam-2_tab_x2.jpg 708w
+                  "
+                  media="(max-width: 1599px)"
+                  sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desk/ourteam-2_desk_x1.jpg 270w,
+                    ./images/desk/ourteam-2_desk_x2.jpg 540w
+                  "
+                  media="(min-width: 1600px)"
+                  sizes="(min-width: 270px) 270px, 100vw"
+                />
+                <img src="./images/ourteam-2.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="our-team__description">
                 <h3 class="our-team__name name">Ольга Репина</h3>
                 <p lang="en" class="our-team__profession">Frontend Developer</p>
@@ -304,11 +356,33 @@
               </div>
             </li>
             <li class="our-team__item card our-team-icon">
-              <img
-                src="./images/ourteam-3.jpg"
-                width="270"
-                alt="Николай Тарасов"
-              />
+              <picture class="our-team__item__img">
+                <source
+                  srcset="
+                    ./images/mobile/ourteam-3_mob_x1.jpg 450w,
+                    ./images/mobile/ourteam-3_mob_x2.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ourteam-3_tab_x1.jpg 354w,
+                    ./images/tablet/ourteam-3_tab_x2.jpg 708w
+                  "
+                  media="(max-width: 1599px)"
+                  sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desk/ourteam-3_desk_x1.jpg 270w,
+                    ./images/desk/ourteam-3_desk_x2.jpg 540w
+                  "
+                  media="(min-width: 1600px)"
+                  sizes="(min-width: 270px) 270px, 100vw"
+                />
+                <img src="./images/ourteam-3.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="our-team__description">
                 <h3 class="our-team__name name">Николай Тарасов</h3>
                 <p lang="en" class="our-team__profession">Marketing</p>
@@ -347,11 +421,33 @@
               </div>
             </li>
             <li class="our-team__item card our-team-icon">
-              <img
-                src="./images/ourteam-4.jpg"
-                width="270"
-                alt="Михаил Ермаков"
-              />
+              <picture class="our-team__item__img">
+                <source
+                  srcset="
+                    ./images/mobile/ourteam-4_mob_x1.jpg 450w,
+                    ./images/mobile/ourteam-4_mob_x2.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ourteam-4_tab_x1.jpg 354w,
+                    ./images/tablet/ourteam-4_tab_x2.jpg 708w
+                  "
+                  media="(max-width: 1599px)"
+                  sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desk/ourteam-4_desk_x1.jpg 270w,
+                    ./images/desk/ourteam-4_desk_x2.jpg 540w
+                  "
+                  media="(min-width: 1600px)"
+                  sizes="(min-width: 270px) 270px, 100vw"
+                />
+                <img src="./images/ourteam-4.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="our-team__description">
                 <h3 class="our-team__name name">Михаил Ермаков</h3>
                 <p lang="en" class="our-team__profession">UI Designer</p>
@@ -394,7 +490,7 @@
       </section>
       <section class="section clients">
         <div class="container">
-          <h2 class="clients__title">Постоянные клиенты</h2>
+          <h2 class="clients__title title">Постоянные клиенты</h2>
           <ul class="clients__list">
             <li class="clients__box-item">
               <a href="" class="clients__icon-box">
@@ -442,11 +538,11 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!-- Подвал -->
-    <!-- <footer class="footer">
+    <footer class="footer section">
       <div class="footer__container container">
-        <div>
+        <div class="footer__contacts">
           <a href="./index.html" class="footer__container__logo logo"
             >Web<span class="footer__container__logo-studio--light"
               >Studio</span
@@ -557,7 +653,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal__btn-close">
@@ -569,7 +665,8 @@
         <form action="#" name="callback" class="modal__callback">
           <div class="modal__callback__thumb">
             <label class="modal__callback__thumb__pretitle" for="name"
-            >Имя</label>
+              >Имя</label
+            >
             <div class="modal__callback__thumb__input-box">
               <input
                 class="modal__callback__thumb__input-box__input"
@@ -585,9 +682,8 @@
                 width="18"
                 height="18"
               >
-              <use href="./images/icons.svg#icon-person-black"></use>
+                <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
-
             </div>
           </div>
           <div class="modal__callback__thumb">
@@ -668,7 +764,8 @@
                   class="
                     modal__callback__license__label__checkbox__icon__license-agrements__link
                   "
-                  > Условия договора</a
+                >
+                  Условия договора</a
                 ></span
               ></label
             >

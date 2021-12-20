@@ -26,7 +26,7 @@
             >Web<span class="nav__logo-studio--dark">Studio</span>
           </a>
 
-          <div class="nav__mob is-hidden" data-modal>
+          <div class="nav__mob js-menu-container">
             <div class="nav__mob__links">
               <ul class="nav__links">
                 <li class="nav__links__item">
@@ -90,11 +90,14 @@
             type="button"
             class="
               nav__button__mob
-              js-open-menu js-close-menu js-menu-container
+              js-open-button
+              js-close-button
+              js-menu-button
+              js-open-menu
+              js-close-menu
             "
             aria-label="Кнопка мобильного меню"
             aria-controls="nav__mob"
-            data-modal-open
           >
             <svg class="nav__button__mob-menu">
               <use
@@ -524,5 +527,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

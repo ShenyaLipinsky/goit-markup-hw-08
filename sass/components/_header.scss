@@ -272,7 +272,9 @@
 .nav-contacts__contact:hover,
 .nav-contacts__contact:focus,
 .nav__button__mob:hover,
-.nav__mob__social__list__item:hover .link {
+.nav__button__mob:focus,
+.nav__mob__social__list__item:hover .link,
+.nav__mob__social__list__item:focus .link {
   color: var(--brand-primary-color);
 }
 .current::after {
