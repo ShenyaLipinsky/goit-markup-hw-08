@@ -27,6 +27,7 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
 (() => {
   const mobileMenu = document.querySelector(".js-menu-button");
   const openMenuBtn = document.querySelector(".js-open-button");
