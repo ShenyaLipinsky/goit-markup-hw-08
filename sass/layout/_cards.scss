@@ -1,7 +1,12 @@
 .portfolio {
-  @media screen and (min-width: 1600px) {
-    padding: 94px 0;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+    width: 1200px;
+  }
+
   &__positions {
     flex-wrap: wrap;
     list-style: none;
@@ -20,7 +25,7 @@
         height: 100%;
         margin: 15px;
       }
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1200px) {
         width: 370px;
       }
       &__link {
