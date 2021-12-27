@@ -124,11 +124,12 @@
     width: 100%;
     height: 40px;
     padding-left: 42px;
-    transition: color var(--transition-timing) var(--cubic-bezier-first);
-    transition: border-color var(--transition-timing) var(--cubic-bezier-first);
+
+    // transition: border-color var(--transition-timing) var(--cubic-bezier-first);
     &:focus {
       transition: border-color var(--transition-timing)
-        var(--cubic-bezier-first);
+          var(--cubic-bezier-first),
+        color var(--transition-timing) var(--cubic-bezier-first);
       border-color: var(--brand-primary-color);
     }
   }

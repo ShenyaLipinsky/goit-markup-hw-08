@@ -641,7 +641,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    min-width: 1200px;
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desk/hero_desk_x1.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desk/hero_desk_x1.jpg);
     padding: 200px 0;
@@ -1188,6 +1188,7 @@ address {
   .footer__contacts {
     width: 100%;
     margin-bottom: 0;
+    text-align: initial;
   }
 }
 
@@ -1672,15 +1673,11 @@ address {
   width: 100%;
   height: 40px;
   padding-left: 42px;
-  -webkit-transition: color var(--transition-timing) var(--cubic-bezier-first);
-  transition: color var(--transition-timing) var(--cubic-bezier-first);
-  -webkit-transition: border-color var(--transition-timing) var(--cubic-bezier-first);
-  transition: border-color var(--transition-timing) var(--cubic-bezier-first);
 }
 
 .modal__callback__thumb__input-box__input:focus {
-  -webkit-transition: border-color var(--transition-timing) var(--cubic-bezier-first);
-  transition: border-color var(--transition-timing) var(--cubic-bezier-first);
+  -webkit-transition: border-color var(--transition-timing) var(--cubic-bezier-first), color var(--transition-timing) var(--cubic-bezier-first);
+  transition: border-color var(--transition-timing) var(--cubic-bezier-first), color var(--transition-timing) var(--cubic-bezier-first);
   border-color: var(--brand-primary-color);
 }
 
